@@ -1,23 +1,19 @@
-import express, { Response } from 'express';
+import express from 'express';
 import path from 'path';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001; // Use PORT from environment
 
-// Serve static files from the client/dist directory
-const clientPath = path.resolve(__dirname, '../client/dist');
-app.use(express.static(clientPath));
+app.use(express.static(path.join(process.cwd(), 'client', 'dist')));
 
-// Fallback to index.html for SPA
-app.get('*', (_req, res: Response) => {
-  res.sendFile(path.resolve(clientPath, 'index.html'));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(process.cwd(), 'client', 'dist', 'index.html'));
 });
 
-app.listen(PORT, () => {
-  console.log(`Listening on PORT: ${PORT}`);
-});
-
-
+app.listen(PORT, () => console.log(`Listening on PORT: ${PORT}`));
 
 
 
