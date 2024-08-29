@@ -4,7 +4,7 @@
     "module": "ESNext",
     "moduleResolution": "node",
     "outDir": "./dist", // Where compiled files will be output
-    "rootDir": "./server/src", // Updated to the correct directory
+    "rootDir": "./server/src", // Should match the base directory for your TypeScript files
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
@@ -23,4 +23,6 @@
   "include": ["server/src/**/*"], // Keep the include path as it matches your files
   "exclude": ["node_modules", "dist", "client/dist"]
 }
+
+
 
