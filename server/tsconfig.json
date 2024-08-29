@@ -1,16 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES2020",                      
-    "module": "ESNext",                       
-    "outDir": "dist",                       
-    "rootDir": "src",                         
-    "strict": true,                            // Enable all strict type-checking options
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,  // Ensure consistent casing in import paths
-    "skipLibCheck": true,
-    "moduleResolution": "node",                // Use Node.js module resolution
-    "noEmitOnError": true                      // Prevent emitting output if there are errors
+    "target": "ES2020", // Target a recent version of ECMAScript
+    "module": "ESNext", // Use ESNext for module resolution
+    "outDir": "./dist", // Output directory for compiled files
+    "rootDir": "./src", // Specify the root directory of input files
+    "esModuleInterop": true, // Allows interop between CommonJS and ES Modules
+    "skipLibCheck": true, // Skips type checking for all declaration files
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing in imports
+    "strict": true // Enable all strict type checking options
   },
-  "include": ["src"],                        
-  "exclude": ["node_modules", "dist", "client/dist"] 
+  "include": ["src/**/*"], // Include all TypeScript files in the src directory
+  "exclude": ["node_modules", "dist", "client/dist"] // Exclude output directories and node_modules
 }
