@@ -3,16 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/server.js",
-  "type": "module", 
-  "scripts": {    
+  "type": "module",
+  "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
     "dev": "nodemon --watch src --ext ts --exec ts-node src/server.ts"
   },
   "nodemonConfig": {
-    "watch": [
-      "src"
-    ],
+    "watch": ["src"],
     "ext": "ts,json,js",
     "exec": "npx tsc && node dist/server.js"
   },
@@ -24,7 +22,8 @@
     "express": "^4.19.2",
     "node-fetch": "^3.3.2",
     "path": "^0.12.7",
-    "uuid": "^9.0.1"
+    "uuid": "^9.0.1",
+    "@popperjs/core": "2.11.8"  
   },
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
@@ -35,8 +34,8 @@
     "typescript": "^5.4.5",
     "ts-node": "^10.9.1"
   }
-  
 }
+
 
 
 
