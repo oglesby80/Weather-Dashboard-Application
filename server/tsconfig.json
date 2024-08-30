@@ -9,6 +9,6 @@
     "forceConsistentCasingInFileNames": true, // Ensure consistent casing in imports
     "strict": true // Enable all strict type checking options
   },
-  "include": ["src/**/*"], // Include all TypeScript files in the src directory
+  "include": ["server/src/**/*.ts"],  // Include all TypeScript files in the src directory
   "exclude": ["node_modules", "dist", "client/dist"] // Exclude output directories and node_modules
 }
