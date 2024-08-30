@@ -1,28 +1,22 @@
 {
-  "compilerOptions": {
-    "target": "ES2020",
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "outDir": "./dist", // Where compiled files will be output
-    "rootDir": "./server/src", // Should match the base directory for your TypeScript files
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "exactOptionalPropertyTypes": true,
-    "noImplicitReturns": true,
-    "noImplicitOverride": true,
-    "useUnknownInCatchVariables": true,
-    "skipLibCheck": true,
-    "allowJs": true,
-    "checkJs": true
-  },
-  "include": ["server/src/**/*"], // Keep the include path as it matches your files
-  "exclude": ["node_modules", "dist", "client/dist"]
-}
+    "compilerOptions": {
+      "target": "ES2020",
+      "module": "ESNext",
+      "moduleResolution": "node",
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "skipLibCheck": true,
+      "allowJs": true,
+      "resolveJsonModule": true
+    },
+    "include": ["server/src/**/*.ts"],
+
+    "exclude": ["node_modules", "dist"]
+  }
+  
 
 
 
